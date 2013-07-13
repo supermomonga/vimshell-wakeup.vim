@@ -1,0 +1,76 @@
+vimshell-wakeup.txt*	Speech notification in vimshell
+
+Version: 0.0.1
+Author: supermomonga (@supermomonga)
+License: NYSL
+
+==============================================================================
+CONTENTS					*vimshell-wakeup-contents*
+
+INTRODUCTION			|vimshell-wakeup-introduction|
+INTERFACE			|vimshell-wakeup-interface|
+  COMMANDS			  |vimshell-wakeup-commands|
+  FUNCTIONS			  |vimshell-wakeup-functions|
+SETTINGS			|vimshell-wakeup-settings|
+CHANGELOG			|vimshell-wakeup-changelog|
+
+
+==============================================================================
+INTRODUCTION					*vimshell-wakeup-introduction*
+
+*vimshell-wakeup* provides to vimshell speech notification feature.
+
+Sometimes we run the command which needs too long time.
+To use vimshell-wakeup.vim, vimshell notificate you by speaking when the
+command finished. So you can concentrate other tasks while running commands
+which needs long time like compiling, calculating and other.
+
+In current version, you need to keep |vimshell| buffer to active in vim.
+If you switch to other buffer, |vimshell|'s hook will not fired till reactived.
+
+
+It Depends on thoese following plugins.
+- vimshell
+- shaberu.vim
+
+
+Latest Version:
+http://github.com/supermomonga/vimshell-wakeup.vim
+
+
+
+==============================================================================
+INTERFACE					*vimshell-wakeup-interface*
+
+This plugin is completely run in automatically, so you don't need to use any
+commands or functions.
+
+
+==============================================================================
+SETTINGS					*vimshell-wakeup-settings*
+
+User define speech text   	              *g:vimshell_wakeup_shaberu_text*
+        You can use |g:vimshell_wakeup_shaberu_text| to define the speech text
+        when notificate.
+>
+        let g:vimshell_wakeup_shaberu_text = 'Hay! Command finished.'
+
+<
+Shaberu mute handling                 *g:vimshell_wakeup_shaberu_force_turnon*
+        If it is 1, Shaberu will speech although |g:vimshell_is_mute| is 1.
+        Default value is 0.
+
+
+Threshold to notificate or not                   *g:vimshell_wakeup_threshold*
+        Command execution time(seconds) is less than
+        |g:vimshell_wakeup_threshold|, notification will not execute.
+        Default value is 5.
+
+
+==============================================================================
+CHANGELOG					*vimshell-wakeup-changelog*
+
+See git-log.
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
