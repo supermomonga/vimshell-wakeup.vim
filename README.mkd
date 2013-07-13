@@ -10,7 +10,7 @@ To use vimshell-wakeup.vim, vimshell notificate you by speaking when the command
 I recommend you to use NeoBundle.vim to manage Vim Plugins.
 If you are using NeoBundle.vim, you only need to write following lines to your .vimrc and just execute :NeoBundleInstall.
 
-    NeoBundle 'supermomonga/vimshell-pure.vim', {'depends' : [ 'Shougo/vimshell', 'supermomonga/shaberu' ]}
+    NeoBundle 'supermomonga/vimshell-wakeup.vim', {'depends' : [ 'Shougo/vimshell', 'supermomonga/shaberu.vim' ]}
 
 
 
