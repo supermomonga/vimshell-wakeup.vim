@@ -1,17 +1,8 @@
-# VimShell Pure
+# VimShell Wakeup
 
-Pretty and minimal VimShell prompt
+Sometimes we run the command which needs too long time.
 
-Inspired by [Pure](https://github.com/sindresorhus/wakeup), the zsh prompt.
-
-![screenshot](https://raw.github.com/supermomonga/vimshell-wakeup.vim/master/screenshot.png)
-
-
-# Features
-
-* Comes with the perfect prompt character.
-* Command execution time will be displayed if it exceeds the one second.
-* Insert a blank line between each prompts.
+To use vimshell-wakeup.vim, vimshell notificate you by speaking when the command finished.
 
 
 # Installation
@@ -19,7 +10,7 @@ Inspired by [Pure](https://github.com/sindresorhus/wakeup), the zsh prompt.
 I recommend you to use NeoBundle.vim to manage Vim Plugins.
 If you are using NeoBundle.vim, you only need to write following lines to your .vimrc and just execute :NeoBundleInstall.
 
-    NeoBundle 'supermomonga/vimshell-pure.vim', {'depends' : 'Shougo/vimshell.vim'}
+    NeoBundle 'supermomonga/vimshell-pure.vim', {'depends' : [ 'Shougo/vimshell', 'supermomonga/shaberu' ]}
 
 
 

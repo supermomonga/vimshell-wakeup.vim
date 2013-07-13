@@ -3,7 +3,7 @@ set cpo&vim
 
 
 " Default settings
-let g:vimshell_wakeup_shaberu_force_turnon        = get(g:, 'vimshell_wakeup_shaberu_force_turnup', 1)
+let g:vimshell_wakeup_shaberu_force_turnon        = get(g:, 'vimshell_wakeup_shaberu_force_turnup', 0)
 let g:vimshell_wakeup_shaberu_text                = get(g:, 'vimshell_wakeup_shaberu_text', '処理が終了しました')
 let g:vimshell_wakeup_threshold                   = get(g:, 'vimshell_wakeup_threshold', 5)
 let g:vimshell_wakeup_vim_active                  = 1
