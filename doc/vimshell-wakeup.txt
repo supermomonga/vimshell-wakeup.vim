@@ -9,8 +9,6 @@ CONTENTS					*vimshell-wakeup-contents*
 
 INTRODUCTION			|vimshell-wakeup-introduction|
 INTERFACE			|vimshell-wakeup-interface|
-  COMMANDS			  |vimshell-wakeup-commands|
-  FUNCTIONS			  |vimshell-wakeup-functions|
 SETTINGS			|vimshell-wakeup-settings|
 CHANGELOG			|vimshell-wakeup-changelog|
 
