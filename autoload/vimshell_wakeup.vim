@@ -37,10 +37,12 @@ endfunction
 function! vimshell_wakeup#notif()
   " Shaberanai if command finished in short time.
   if g:vimshell_wakeup_last_command_execution_time < g:vimshell_wakeup_threshold
+    " call shaberu#say('hello')
     return
   endif
   " Shaberanai if Vim is active and current buffer is vimshell.
   if g:vimshell_wakeup_vim_active == 1 && &filetype == 'vimshell'
+    " call shaberu#say('hi')
     return
   endif
   " Shaberu.
